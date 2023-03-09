@@ -264,7 +264,7 @@ func TestAdjective(t *testing.T) {
 }
 
 func TestSillyName(t *testing.T) {
-	sillyName := SillyName()
+	sillyName := SillyName(true)
 
 	if len(sillyName) == 0 {
 		t.Error("Couldnt generate a silly name")
