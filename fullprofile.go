@@ -121,8 +121,8 @@ func GenerateProfile(gender int) *Profile {
 	profile.Location.State = State(2)
 	profile.Location.Street = StringNumber(1, "") + " " + Street()
 
-	profile.Login.Username = SillyName()
-	pass := SillyName()
+	profile.Login.Username = SillyName(true)
+	pass := SillyName(true)
 	salt := RandStringRunes(16)
 	profile.Login.Password = pass
 	profile.Login.Salt = salt
